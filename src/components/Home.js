@@ -22,13 +22,29 @@ const Home = () => {
               to="#"
               onClick={(e) => {
                 e.preventDefault();
-                window.location.href = "https://training.zuri.team/";
+                window.location.href = "https://twitter.com/BolaAfarait";
               }}
               target="blank"
             >
               @BolaAfarait
+              <sub>Check Me out on Twitter</sub>
             </LinkText>
           </ButtonTwitter>
+
+
+          <ButtonSlackTeam id="slack">
+            <LinkText
+              to="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "#";
+              }}
+              target="blank"
+            >
+              Slack
+            </LinkText>
+          </ButtonSlackTeam>
+
 
           <ButtonZuriTeam id="btn_zuri">
             <LinkText
@@ -177,6 +193,24 @@ const ButtonTwitter = styled.button`
 }
 `;
 
+
+const ButtonSlackTeam = styled.button`
+ width: 72em;
+  height: 3.2em;
+  border-radius: 5px;
+  border: none;
+  background-color: #eaecf0;
+display: none;
+  &:hover{
+    background-color:#cecfd0;
+  }
+
+  @media(max-width:675px){
+  
+    width: 60%;
+}
+`;
+
 const ButtonZuriTeam = styled.button`
   width: 72em;
   height: 3.2em;
@@ -199,6 +233,7 @@ const ButtonZuriBooks = styled.button`
   height: 3.2em;
   border-radius: 5px;
   border: none;
+  background-color: #eaecf0;
 
   &:hover{
     background-color:#cecfd0;
@@ -215,6 +250,8 @@ const ButtonPythonBook = styled.button`
   height: 3.2em;
   border-radius: 5px;
   border: none;
+  background-color: #eaecf0;
+
 
   &:hover{
     background-color:#cecfd0;
@@ -231,6 +268,8 @@ const ButtonCodersBgCheck = styled.button`
   height: 3.2em;
   border-radius: 5px;
   border: none;
+  background-color: #eaecf0;
+
   &:hover{
     background-color:#cecfd0;
   }
@@ -245,6 +284,7 @@ const ButtonDesignBook = styled.button`
   height: 3.5em;
   border-radius: 5px;
   border: none;
+  background-color: #eaecf0;
 
   &:hover{
     background-color:#cecfd0;
@@ -261,6 +301,7 @@ const LinkText = styled(Link)`
   font-size: 12px;
   line-height: 28px;
   color: #101828;
+
 `;
 
 const SocialHolder = styled.div`
