@@ -12,7 +12,7 @@ const Home = () => {
       <MainHolder>
         <ProfileSection>
           <ImageHolder src={myImag} alt="bola" id="profile__img" />
-           <h2> <a href="https://twitter.com/BolaAfarait" target="_blank" rel="noreferrer">BolaAfarait</a></h2>
+           <h2 id="twitter__link"> <a href="https://twitter.com/BolaAfarait" target="_blank" rel="noreferrer">BolaAfarait</a></h2>
 
         </ProfileSection>
 
