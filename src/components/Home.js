@@ -172,16 +172,20 @@ const LinkSection = styled.div`
   height: 310px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-between;
+
 `;
 
-const ButtonTwitter = styled.button`
-  width: 72em;
-  height: 3.2em;
+const ButtonTwitter = styled.div`
+  width: 60em;
+  height: 3em;
   border-radius: 5px;
   border: none;
   background-color: #eaecf0;
+  display: flex;
+justify-content: center;
+align-items: center;
 
   &:hover{
     background-color:#cecfd0;
@@ -194,29 +198,15 @@ const ButtonTwitter = styled.button`
 `;
 
 
-const ButtonSlackTeam = styled.button`
- width: 72em;
-  height: 3.2em;
+const ButtonSlackTeam = styled.div`
+ width: 60em;
+  height: 3em;
   border-radius: 5px;
   border: none;
   background-color: #eaecf0;
 display: none;
-  &:hover{
-    background-color:#cecfd0;
-  }
-
-  @media(max-width:675px){
-  
-    width: 60%;
-}
-`;
-
-const ButtonZuriTeam = styled.button`
-  width: 72em;
-  height: 3.2em;
-  border-radius: 5px;
-  border: none;
-  background-color: #eaecf0;
+justify-content: center;
+align-items: center;
 
   &:hover{
     background-color:#cecfd0;
@@ -228,12 +218,37 @@ const ButtonZuriTeam = styled.button`
 }
 `;
 
-const ButtonZuriBooks = styled.button`
-  width: 72em;
-  height: 3.2em;
+const ButtonZuriTeam = styled.div`
+  width: 60em;
+  height: 3em;
   border-radius: 5px;
   border: none;
   background-color: #eaecf0;
+  display: flex;
+justify-content: center;
+align-items: center;
+
+
+  &:hover{
+    background-color:#cecfd0;
+  }
+
+  @media(max-width:675px){
+  
+    width: 60%;
+}
+`;
+
+const ButtonZuriBooks = styled.div`
+  width: 60em;
+  height: 3em;
+  border-radius: 5px;
+  border: none;
+  background-color: #eaecf0;
+  display: flex;
+justify-content: center;
+align-items: center;
+
 
   &:hover{
     background-color:#cecfd0;
@@ -245,12 +260,16 @@ const ButtonZuriBooks = styled.button`
 }
 `;
 
-const ButtonPythonBook = styled.button`
-  width: 72em;
-  height: 3.2em;
+const ButtonPythonBook = styled.div`
+  width: 60em;
+  height: 3em;
   border-radius: 5px;
   border: none;
   background-color: #eaecf0;
+  display: flex;
+justify-content: center;
+align-items: center;
+
 
 
   &:hover{
@@ -263,12 +282,16 @@ const ButtonPythonBook = styled.button`
 }
 `;
 
-const ButtonCodersBgCheck = styled.button`
-  width: 72em;
-  height: 3.2em;
+const ButtonCodersBgCheck = styled.div`
+  width: 60em;
+  height: 3em;
   border-radius: 5px;
   border: none;
   background-color: #eaecf0;
+  display: flex;
+justify-content: center;
+align-items: center;
+
 
   &:hover{
     background-color:#cecfd0;
@@ -279,12 +302,16 @@ const ButtonCodersBgCheck = styled.button`
 }
 `;
 
-const ButtonDesignBook = styled.button`
-  width: 72em;
-  height: 3.5em;
+const ButtonDesignBook = styled.div`
+  width: 60em;
+  height: 3em;
   border-radius: 5px;
   border: none;
   background-color: #eaecf0;
+  display: flex;
+justify-content: center;
+align-items: center;
+
 
   &:hover{
     background-color:#cecfd0;
