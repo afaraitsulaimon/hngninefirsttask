@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import myImag from "../image/bola.jpg";
 import twitterIcon from "../image/twitter-icon.jpg";
 import slackIcon from "../image/slack.jpg";
@@ -12,107 +11,62 @@ const Home = () => {
     <Container>
       <MainHolder>
         <ProfileSection>
-          <ImageHolder src={myImag} alt="bola" id="profile_img" />
-          <h2>Afarait Sulaimon</h2>
+          <ImageHolder src={myImag} alt="bola" id="profile__img" />
+           <h2> <a href="https://twitter.com/BolaAfarait" target="_blank" rel="noreferrer">BolaAfarait</a></h2>
+
         </ProfileSection>
 
         <LinkSection>
           <ButtonTwitter id="btn_zuri">
-            <LinkText
-              to="#"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "https://twitter.com/BolaAfarait";
-              }}
-              target="blank"
-            >
-              @BolaAfarait
-              <sub>Check Me out on Twitter</sub>
-            </LinkText>
+            <a href="https://twitter.com/BolaAfarait" target="_blank" rel="noreferrer"> Twitter Link</a>
+
           </ButtonTwitter>
 
 
           <ButtonSlackTeam id="slack">
-            <LinkText
-              to="#"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "#";
-              }}
-              target="blank"
-            >
-              Slack
-            </LinkText>
+           <a href="https://slack.com" target="_blank" rel="noreferrer">Slack</a>
+
           </ButtonSlackTeam>
 
 
           <ButtonZuriTeam id="btn_zuri">
-            <LinkText
-              to="#"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "https://training.zuri.team/";
-              }}
-              target="blank"
-            >
-              Zuri Team
-            </LinkText>
+     
+            <a href="https://training.zuri.team/" target="_blank" rel="noreferrer">Zuri Team</a>
+
           </ButtonZuriTeam>
 
           <ButtonZuriBooks id="books">
-            <LinkText
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "http://books.zuri.team";
-              }}
-              target="blank"
-            >
-              Zuri Books
-            </LinkText>
+          <a href="http://books.zuri.team" target="_blank" rel="noreferrer">Zuri Books</a>
+
+          
           </ButtonZuriBooks>
 
           <ButtonPythonBook id="book__python">
-            <LinkText
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href =
-                  "https://books.zuri.team/python-for-beginners?ref_id=ZoulayMan";
-              }}
-              target="blank"
-            >
-              Python Book
-            </LinkText>
+           
+
+            <a href="https://books.zuri.team/python-for-beginners?ref_id=ZoulayMan" target="_blank" rel="noreferrer">Python Book</a>
+
           </ButtonPythonBook>
 
           <ButtonCodersBgCheck id="pitch">
-            <LinkText
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "https://background.zuri.team/";
-              }}
-              target="blank"
-            >
-              Coders Background
-            </LinkText>
+          <a href="https://background.zuri.team/" target="_blank" rel="noreferrer">Coders Background</a>
+
+           
           </ButtonCodersBgCheck>
 
           <ButtonDesignBook id="book__design">
-            <LinkText
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "https://books.zuri.team/design-rules";
-              }}
-              target="_blank"
-            >
-              Design Book<sub>Free Design Book</sub>
-            </LinkText>
+          <a href="https://books.zuri.team/design-rules" target="_blank" rel="noreferrer">Design Book</a>
+
+        
           </ButtonDesignBook>
         </LinkSection>
 
         <SocialHolder>
           <InsideSocialHolder>
-            <img src={slackIcon} alt="twitterIcons" />
-            <img src={twitterIcon} alt="twitterIcons" />
+          <a href="https://slack.com" target="_blank" rel="noreferrer"><img src={slackIcon} alt="twitterIcons" /></a>
+          <a href="https://twitter.com/BolaAfarait" target="_blank" rel="noreferrer"><img src={twitterIcon} alt="twitterIcons" /></a>
+          
+            
           </InsideSocialHolder>
         </SocialHolder>
       </MainHolder>
@@ -157,6 +111,11 @@ const ProfileSection = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+  a{
+  text-decoration: none;
+  color: black;
+}
 `;
 
 const ImageHolder = styled.img`
@@ -187,6 +146,11 @@ const ButtonTwitter = styled.div`
 justify-content: center;
 align-items: center;
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
   &:hover{
     background-color:#cecfd0;
   }
@@ -207,7 +171,11 @@ const ButtonSlackTeam = styled.div`
 display: none;
 justify-content: center;
 align-items: center;
+a{
+  text-decoration: none;
+  color: black;
 
+}
   &:hover{
     background-color:#cecfd0;
   }
@@ -227,7 +195,11 @@ const ButtonZuriTeam = styled.div`
   display: flex;
 justify-content: center;
 align-items: center;
+a{
+  text-decoration: none;
+  color: black;
 
+}
 
   &:hover{
     background-color:#cecfd0;
@@ -249,6 +221,11 @@ const ButtonZuriBooks = styled.div`
 justify-content: center;
 align-items: center;
 
+a{
+  text-decoration: none;
+  color: black;
+
+}
 
   &:hover{
     background-color:#cecfd0;
@@ -269,7 +246,11 @@ const ButtonPythonBook = styled.div`
   display: flex;
 justify-content: center;
 align-items: center;
+a{
+  text-decoration: none;
+  color: black;
 
+}
 
 
   &:hover{
@@ -291,7 +272,11 @@ const ButtonCodersBgCheck = styled.div`
   display: flex;
 justify-content: center;
 align-items: center;
+a{
+  text-decoration: none;
+  color: black;
 
+}
 
   &:hover{
     background-color:#cecfd0;
@@ -299,6 +284,10 @@ align-items: center;
   @media(max-width:675px){
   
   width: 60%;
+}
+
+a{
+  text-decoration: none;
 }
 `;
 
@@ -312,7 +301,11 @@ const ButtonDesignBook = styled.div`
 justify-content: center;
 align-items: center;
 
+a{
+  text-decoration: none;
+  color: black;
 
+}
   &:hover{
     background-color:#cecfd0;
   }
@@ -323,13 +316,7 @@ align-items: center;
 }
 `;
 
-const LinkText = styled(Link)`
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 28px;
-  color: #101828;
 
-`;
 
 const SocialHolder = styled.div`
   height: 2em;
