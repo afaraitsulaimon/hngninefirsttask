@@ -17,7 +17,7 @@ const Home = () => {
         </ProfileSection>
 
         <LinkSection>
-          <ButtonTwitter id="btn_zuri">
+          <ButtonTwitter id="twitter">
             <a href="https://twitter.com/BolaAfarait" target="_blank" rel="noreferrer"> Twitter Link</a>
 
           </ButtonTwitter>
@@ -29,7 +29,7 @@ const Home = () => {
           </ButtonSlackTeam>
 
 
-          <ButtonZuriTeam id="btn_zuri">
+          <ButtonZuriTeam id="btn__zuri">
      
             <a href="https://training.zuri.team/" target="_blank" rel="noreferrer">Zuri Team</a>
 
