@@ -3,9 +3,8 @@ import styled from "styled-components";
 import myImag from "../image/bola.jpg";
 import twitterIcon from "../image/twitter-icon.jpg";
 import slackIcon from "../image/slack.jpg";
-import zuriIcon from "../image/Zuri.Internship_Logo.png";
-import I4g from "../image/I4G.jpg";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -76,19 +75,7 @@ const Home = () => {
         </SocialHolder>
       </MainHolder>
 
-      <Footer>
-        <div>
-          <img src={zuriIcon} alt="zuri-logo" />
-        </div>
-
-        <div>
-          <p>HNG Internship 9 Frontend Task</p>
-        </div>
-
-        <div>
-          <img src={I4g} alt="ingressive-logo" />
-        </div>
-      </Footer>
+    <Footer/>
     </Container>
   );
 };
@@ -381,20 +368,5 @@ const InsideSocialHolder = styled.div`
 }
 `;
 
-const Footer = styled.div`
-  width: 100%;
-  height: 4em;
-  margin-top: 3em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  @media(max-width:675px){
-  
- display: grid;
- place-items: center;
-
-}
-`;
 
 export default Home;
