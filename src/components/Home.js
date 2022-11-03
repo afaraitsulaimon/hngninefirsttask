@@ -5,6 +5,7 @@ import twitterIcon from "../image/twitter-icon.jpg";
 import slackIcon from "../image/slack.jpg";
 import zuriIcon from "../image/Zuri.Internship_Logo.png";
 import I4g from "../image/I4G.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -59,6 +60,10 @@ const Home = () => {
 
         
           </ButtonDesignBook>
+
+          <Button id="contact">
+               <ContactLink to={"/contact"}> Contact Me</ContactLink>
+          </Button>
         </LinkSection>
 
         <SocialHolder>
@@ -128,7 +133,7 @@ const ImageHolder = styled.img`
 
 const LinkSection = styled.div`
   width: 100%;
-  height: 310px;
+  height: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,6 +321,38 @@ a{
 }
 `;
 
+
+const Button = styled.button`
+width: 72em;
+height: 3.7em;
+border-radius: 5px;
+  border: none;
+  background-color: #eaecf0;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+
+&:hover{
+    background-color:#cecfd0;
+  }
+
+@media(max-width:675px){
+  
+  width: 60%;
+}
+
+`;
+
+
+
+const ContactLink = styled(Link)`
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+      font-weight: lighter;
+
+`;
 
 
 const SocialHolder = styled.div`
